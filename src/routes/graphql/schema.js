@@ -4,7 +4,7 @@ import { createSchema } from 'graphql-yoga'
 export const typeDefs = `scalar Map
 
 type Query {
-	pokemon(first: Int, after: String): SpeciesConnection!
+	pokemon(first: Int, after: String, last: Int, before: String): SpeciesConnection!
 	species(id: Int!): Species
 	favorites: [Species!]!
 }

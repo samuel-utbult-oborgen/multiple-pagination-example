@@ -3,13 +3,11 @@
     export let data
     
     $: ({ Info } = data)
-
-    $: console.log(JSON.stringify($Info));
 </script>
 
 <div style="display: flex">
     <div style="flex: 1">
-        <!-- This function call would have to somehow target "first". -->
+        <!-- Could this function call somehow target "first"? -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -20,13 +18,13 @@
             {/each}
         </ul>
 
-        <!-- This function call would have to somehow target "first". -->
+        <!-- Could this function call somehow target "first"? -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>
     </div>
     <div style="flex: 1">
-        <!-- This function call would have to somehow target "second". -->
+        <!-- Could this function call somehow target "second"? -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -37,13 +35,13 @@
             {/each}
         </ul>
 
-        <!-- This function call would have to somehow target "second". -->
+        <!-- Could this function call somehow target "second"? -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>
     </div>
     <div style="flex: 1">
-        <!-- This function call would have to somehow target "fragment". -->
+        <!-- Could this function call somehow target "fragment"? -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -54,7 +52,7 @@
             {/each}
         </ul>
 
-        <!-- This function call would have to somehow target "fragment". -->
+        <!-- Could this function call somehow target "fragment"? -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>

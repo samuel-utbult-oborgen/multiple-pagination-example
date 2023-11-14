@@ -1,0 +1,5 @@
+fragment PokemonFragment on Query {
+    fragment: pokemon(first: 10) @paginate {
+        ...SpeciesEdges
+    }
+}

@@ -1,0 +1,7 @@
+fragment SpeciesEdges on SpeciesConnection {
+    edges {
+        node {
+            name
+        }
+    }
+}

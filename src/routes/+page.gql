@@ -1,0 +1,15 @@
+query Info {
+    first: pokemon(first: 10, after: "YXJyYXljb25uZWN0aW9uOjI0") @paginate {
+        ...SpeciesEdges
+    }
+
+    # This error message appears if the line below is attempted:
+    # Encountered error in src/routes/+page.gql
+    # @paginate can only appear in a document once.
+    
+    #second: pokemon(first: 10) @paginate {
+    second: pokemon(first: 10) {
+        ...SpeciesEdges
+    }
+    ...PokemonFragment
+}

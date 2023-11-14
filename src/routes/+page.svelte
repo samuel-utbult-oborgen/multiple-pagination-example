@@ -7,7 +7,8 @@
 
 <div style="display: flex">
     <div style="flex: 1">
-        <!-- Could this function call somehow target "first"? -->
+        <!-- Could this function call somehow target "first"?
+            I propose Info.first.loadPreviousPage() -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -18,13 +19,15 @@
             {/each}
         </ul>
 
-        <!-- Could this function call somehow target "first"? -->
+        <!-- Could this function call somehow target "first"?
+            I propose Info.first.loadNextPage() -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>
     </div>
     <div style="flex: 1">
-        <!-- Could this function call somehow target "second"? -->
+        <!-- Could this function call somehow target "second"?
+            I propose Info.second.loadPreviousPage() -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -35,13 +38,15 @@
             {/each}
         </ul>
 
-        <!-- Could this function call somehow target "second"? -->
+        <!-- Could this function call somehow target "second"?
+            I propose Info.second.loadNextPage() -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>
     </div>
     <div style="flex: 1">
-        <!-- Could this function call somehow target "fragment"? -->
+        <!-- Could this function call somehow target "fragment"?
+            I propose Info.fragment.loadPreviousPage() -->
         <button on:click={() => Info.loadPreviousPage()}>
             Prev
         </button>
@@ -52,7 +57,8 @@
             {/each}
         </ul>
 
-        <!-- Could this function call somehow target "fragment"? -->
+        <!-- Could this function call somehow target "fragment"?
+            I propose Info.fragment.loadNextPage() -->
         <button on:click={() => Info.loadNextPage()}>
             Next
         </button>

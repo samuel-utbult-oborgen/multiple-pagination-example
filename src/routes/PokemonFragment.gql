@@ -1,7 +1,7 @@
 fragment PokemonFragment on Query {
     # Having @paginate here causes no compilation problems, but the only list
-    # elements to be shown are between 16 and 25. Calling hasPreviousPage or
-    # hasNextPage results in these elements being repeated.
+    # elements to be shown are between 16 and 25. Calling loadPreviousPage or
+    # loadNextPage results in these elements being repeated.
     
     # The pagination seems to be ultimately controlled from the field with
     # @paginate in +page.gql since no more elements will be loaded when the
@@ -9,7 +9,7 @@ fragment PokemonFragment on Query {
     # of this field.
     
     # Removing @paginate from the field with @paginate in +page.gql results in
-    # hasPreviousPage and hasNextPage not being set.
+    # loadPreviousPage and loadNextPage not being set.
     fragment: pokemon(first: 10, after: "YXJyYXljb25uZWN0aW9uOjE0") @paginate {
         ...SpeciesEdges
     }
